@@ -1,0 +1,17 @@
+Sentinel-Neuro-Core/
+├── .github/
+│   └── workflows/              # CI/CD Pipelines (Azure DevOps / GitHub Actions)
+├── docs/                       # Architecture diagrams, HIPAA Compliance Docs
+├── k8s/                        # Kubernetes Manifests (Helm Charts)
+│   ├── base/
+│   └── overlays/prod/          # Production configurations
+├── src/
+│   ├── Sentinel.Edge.Vision/   # Python/YOLOv8 module for CCTV processing
+│   ├── Sentinel.Cloud.API/     # .NET 8 ASP.NET Core Web API (The Brain)
+│   ├── Sentinel.Agents/        # Semantic Kernel (Copilot) Agents
+│   ├── Sentinel.Integrations/  # Motorola Bodycam & Epic/Cerner Connectors
+│   └── Sentinel.Shared/        # Shared DTOs, Event Bus interfaces
+├── tests/                      # xUnit and Integration tests
+├── docker-compose.yml          # For local dev emulation
+├── LICENSE                     # MIT or Proprietary
+└── README.md                   # Professional Profile
